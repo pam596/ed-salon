@@ -1,0 +1,8 @@
+把公众号二维码图片放进这个文件夹，文件名必须如下（PNG 格式）：
+edhealer.png   —— ED Healer
+smhc.png       —— 上海市精神卫生中心
+pkuh6.png      —— 北京大学第六医院
+jsws686.png    —— 精神卫生686
+pearl.png      —— Pearl的不焦虑实验室
+gezhi.png      —— 格致论道讲坛
+没有放图片时，网页会自动显示“微信搜索「名称」”。
