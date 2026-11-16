@@ -196,6 +196,23 @@ label.q{font-size:13px;margin-bottom:4px}
 #s-rec h2{font-size:28px}
 .out{max-height:390px}
 #s-rec .sec-label{margin-bottom:6px}#s-rec .dl a{padding:6px 14px}
+
+/* ---- 新增：联系与关注 / 致谢页 ---- */
+.connect-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch;margin-top:8px}
+.connect-card{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:16px 20px 14px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:500px;box-shadow:0 6px 18px rgba(222,106,100,.06)}
+.connect-card img{display:block;width:auto;height:430px;max-width:100%;object-fit:contain;border-radius:10px}
+.connect-card h3{margin:8px 0 0;color:var(--rose-d);font-size:17px}
+.connect-card p{margin:2px 0 0;color:var(--muted);font-family:var(--hei);font-size:13px}
+#s-contact h2{margin-bottom:4px}
+#s-thanks{align-items:center;text-align:center;background:linear-gradient(135deg,#FBF4EF 0%,#FDF0EC 58%,#F8E5DF 100%)}
+#s-thanks .thanks-inner{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100%}
+#s-thanks .thanks-mark{width:76px;height:4px;border-radius:99px;background:var(--rose);margin-bottom:28px}
+#s-thanks h1{font-family:var(--hei);font-size:68px;line-height:1.2;letter-spacing:.08em;color:var(--ink);margin:0 0 22px}
+#s-thanks .qa{font-family:var(--hei);font-size:30px;font-weight:700;letter-spacing:.18em;color:var(--rose-d);margin-bottom:10px}
+#s-thanks .qa-sub{font-family:var(--hei);font-size:17px;color:var(--muted);letter-spacing:.12em}
+#s-thanks .thanks-foot{position:absolute;bottom:46px;font-family:var(--hei);font-size:14px;letter-spacing:.16em;color:var(--muted)}
+@media(max-width:700px){.connect-grid{gap:12px}.connect-card{padding:10px;min-height:0}.connect-card img{height:360px}#s-thanks h1{font-size:48px}}
+
 </style>
 <script>function qrFallback(img,name){var d=document.createElement('div');d.className='ph';d.innerHTML='<span class="wx">💬</span>微信搜索<br>「'+name+'」';img.replaceWith(d)}</script>
 </head><body>
@@ -568,9 +585,42 @@ label.q{font-size:13px;margin-bottom:4px}
  </div>
 </section>
 
+
+<!-- 20 联系与关注 -->
+<section class="slide" id="s-contact">
+ <div class="inner">
+  <span class="sec-label">附 · 联系与关注</span>
+  <h2>让交流继续，<span class="hl">让回音发生</span></h2>
+  <p class="lead">欢迎扫码加入中财 MAP 咨询方向校友群，也欢迎关注「回音心理」。</p>
+  <div class="connect-grid">
+   <div class="connect-card">
+    <img src="assets/wechat-alumni-group.png" alt="中财 MAP 咨询方向校友群微信群二维码">
+    <h3>中财 MAP 咨询方向校友群</h3>
+    <p>扫码加入校友交流</p>
+   </div>
+   <div class="connect-card">
+    <img src="assets/xiaohongshu-huiyin.jpg" alt="回音心理小红书主页及二维码">
+    <h3>回音心理 · 小红书</h3>
+    <p>扫码关注，持续获取心理学分享</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 21 谢谢聆听 -->
+<section class="slide" id="s-thanks">
+ <div class="thanks-inner">
+  <div class="thanks-mark"></div>
+  <h1>谢谢聆听</h1>
+  <div class="qa">Q &amp; A</div>
+  <div class="qa-sub">问答与交流</div>
+  <div class="thanks-foot">回音心理 · 中财 MAP</div>
+ </div>
+</section>
+
 <dialog id="dlg"><div class="dlg" id="dlgbody"></div></dialog>
 <div class="navbtn"><button id="prevb" aria-label="上一页">▲</button><button id="nextb" aria-label="下一页">▼</button></div>
-<div class="counter" id="counter">01 / 19</div>
+<div class="counter" id="counter">01 / 21</div>
 
 <script>window.__RES__={"ed-h1": {"id": "ed-h1", "cat": "医院", "name": "北京大学第六医院｜专项研修", "org": "进食障碍诊疗团队（心身病房）", "status": "2026 年专项研修生招生简章已发布（2026-02）", "entry": "以精神科/医疗从业者为主；往期简章写明“不完全符合条件、但指导老师面试后愿意指导者”也可申请——心理学背景需先联系团队确认能否进入进食障碍方向。", "adv": "国内进食障碍住院量最大的中心之一，可接触全病程诊疗：急性期再喂养、心理治疗、家庭工作。", "links": [["2026 专项研修生招生简章（官网附件）", "https://pkuh6.cn/Sites/Uploaded/File/2026/02/036390573548795619257821706.doc"], ["进食障碍门诊就医指南（了解团队）", "https://www.pkuh6.cn/Html/News/Articles/100820.html"]]}, "ed-h2": {"id": "ed-h2", "cat": "医院", "name": "上海市精神卫生中心｜进食障碍诊治中心", "org": "陈珏团队 · 临床心理科 / 心身病房", "status": "长期；进修与见习通知以官网“教育培训”栏目为准", "entry": "进修、见习通常需单位或学校推荐；在读研究生可通过导师或学校实习协议联系科室。", "adv": "国内首个进食障碍诊治中心，医疗、心理、营养、家庭治疗多学科协作，培训体系成熟。", "links": [["上海市精神卫生中心官网", "https://www.smhc.org.cn/"], ["往期：进食障碍多学科诊疗进展培训（国家继教）", "https://www.smhc.org.cn/info/1009/2451.htm"]]}, "ed-h3": {"id": "ed-h3", "cat": "医院", "name": "本地精神专科 / 综合医院心身医学科", "org": "自荐见习（非一线城市同样可行）", "status": "随时可联系", "entry": "学校实习协议或导师推荐最稳妥；也可写自荐邮件，说明可投入时间、伦理意识与想学的内容。", "adv": "离家近、可长期参与；能旁听病例讨论、协助量表评估和团体活动，积累医疗场景经验。", "links": []}, "ed-r1": {"id": "ed-r1", "cat": "科研", "name": "上海市精神卫生中心｜临床研究中心", "org": "「研究招募」栏目", "status": "长期栏目，课题滚动发布", "entry": "按课题要求；科研助理岗位一般要求心理学/医学相关硕士，会统计与量表者优先。", "adv": "了解临床研究全流程：入组、评估、随访；能系统接触 EDE-Q 等进食障碍评估工具。", "links": [["临床研究中心「研究招募」", "https://www.smhc.org.cn/lcyjzx/"], ["参考：2025-04 科研助理招聘公告", "https://www.gaoxiaojob.com/announcement/detail/310056.html"]]}, "ed-r2": {"id": "ed-r2", "cat": "科研", "name": "北京大学第六医院｜课题组科研助理", "org": "关注官网招聘与课题组动态", "status": "不定期发布", "entry": "心理学/医学背景；有数据分析、结构化访谈或量表施测经验加分。", "adv": "国家精神疾病医学中心，研究平台高，可把“进食障碍”沉淀为论文与研究方向。", "links": [["北京大学第六医院官网", "https://www.pkuh6.cn/"]]}, "ed-r3": {"id": "ed-r3", "cat": "科研", "name": "麻省总医院布里格姆｜进食障碍临床与研究项目（EDCRP）", "org": "海外 · 可邮件联系", "status": "官网写明欢迎有兴趣的实习生联系教职员工", "entry": "需英文沟通能力；以住院医师和实习生为主，可先邮件介绍自己的研究兴趣。", "adv": "CBT、FBT、ARFID 研究处于国际前沿，适合想走科研或出国深造路线的同学。", "links": [["项目中文介绍页", "https://www.massgeneralbrigham.org/zh-cn/services/eating-disorders-clinical-research"]]}, "ed-r4": {"id": "ed-r4", "cat": "科研", "name": "国内高校“身体意象 / 进食行为”课题组", "org": "自行检索 → 定向联系", "status": "随时", "entry": "在知网、Web of Science 用“身体意象 / 进食障碍 / disordered eating”检索国内作者，读过对方论文再发邮件。", "adv": "门槛低、可远程参与（文献、数据、问卷），适合非一线城市同学。", "links": []}, "ed-v1": {"id": "ed-v1", "cat": "志愿与公益", "name": "ED Healer", "org": "国内首个进食障碍同辈支持组织", "status": "招募信息在其微信公众号内发布", "entry": "关注公众号「ED Healer」查看志愿者招募；常见岗位为科普内容、社群运营、活动支持。", "adv": "直接贴近亲历者的真实经验，理解“病人视角”；做科普也能积累专业影响力。", "links": [["报道：亲历者与 ED Healer（2025）", "https://www.huxiu.com/article/4403233.html"], ["报道：进食障碍者的自白和互助（澎湃）", "https://www.thepaper.cn/newsDetail_forward_28842845"]]}, "ed-v2": {"id": "ed-v2", "cat": "志愿与公益", "name": "上海市心理热线 12356｜志愿者", "org": "上海市精神卫生中心", "status": "2025-12 发布过招募；新一轮通知在官网栏目发布", "entry": "需相关资质证书，以及 1 年以上专兼职心理工作经历。", "adv": "系统的热线与危机识别训练；进食障碍来电者常伴情绪与自伤风险，能练风险评估。", "links": [["2025-12 招募通知", "https://www.smhc.org.cn/info/2681/13861.htm"], ["热线志愿者招募栏目", "https://www.smhc.org.cn/ggjsws1/xlrx/xlrxzyzzm.htm"]]}, "ed-t1": {"id": "ed-t1", "cat": "专项培训", "name": "CBT-E 网络培训（牛津 CREDO）", "org": "Fairburn 团队官方 · 英文", "status": "长期开放（自定进度）", "entry": "CREDO 不限定专业资格，但希望有一定临床基础；以视频为主，需英文；官方建议培训期间同时治疗 1–2 个练习个案。", "adv": "CBT-E 是跨诊断的一线循证疗法，学一次可覆盖 AN/BN/BED；网络自学，不受城市限制。", "links": [["CBT-E 培训网站 cbte.co", "https://www.cbte.co/"], ["CREDO：网络培训介绍", "https://credo-oxford.com/9.2.html"]]}, "ed-t2": {"id": "ed-t2", "cat": "专项培训", "name": "FBT 家庭治疗培训（Train2Treat4ED）", "org": "James Lock & Daniel Le Grange · Zoom", "status": "2026 年有多期工作坊（含学生价）", "entry": "先修 2 天 FBT-AN/BN 工作坊，才能报 FBT-ARFID；ARFID 1 天课学生价 225 美元。", "adv": "青少年进食障碍的一线疗法，正好补上“家庭缺席”这块短板。", "links": [["Train2Treat4ED 官网", "https://train2treat4ed.com/"], ["示例：2026-03 FBT-ARFID 工作坊", "https://train2treat4ed.com/arfid-march-2026"]]}, "ed-t3": {"id": "ed-t3", "cat": "专项培训", "name": "北大六院｜进食障碍全病程诊疗与心理治疗培训", "org": "往期 2025-09，可关注下一期", "status": "往期；下一期以北医新闻与六院官网为准", "entry": "以专业人员为主；往期《中国进食障碍防治指南》推广培训为 40 人小班、邮件/微信报名。", "adv": "国内一线团队授课，内容与本土临床最贴近。", "links": [["北医新闻：2025 年培训报道", "https://bynews.bjmu.edu.cn/zhxw/2025/0928a458a49e4e569d6d19f28bdf233d.htm"], ["往期招生形式参考（2019）", "https://www.pkuh6.cn/Html/News/Articles/3811.html"]]}, "tc-1": {"id": "tc-1", "cat": "长程项目", "name": "北师大心理学部｜CARE 临床与咨询专业能力长程培训", "org": "两年制 · 北京面授为主", "status": "按期招生（往期 4 月报名、7 月面试）", "entry": "需承诺每周 10–20 小时；第一学年精神科见习约 30 小时（工作日）；往期学费 14.8 万元 / 两年。", "adv": "项目内安排不少于 100 小时直接服务（个体、团体、家庭等），配三级督导——真正的“带案学习”。", "cases": "项目派案 ✓", "links": [["CARE 项目手册（往期）", "https://psych.bnu.edu.cn/zt/care2023/images/CARE手册.pdf"]]}, "tc-2": {"id": "tc-2", "cat": "长程项目", "name": "中美精神分析联盟（CAPA）", "org": "线上 · 每年 30 周", "status": "2026–27 学年申请请关注官网", "entry": "需有临床工作场所和自己的个案；竞争较激烈，需英文或借助翻译。", "adv": "每周 4 小时课 + 1 小时个体督导；高级班有连续个案研讨和不少于 30 小时个体督导。", "cases": "督导自己的个案（不派案）", "links": [["CAPA 高级培训介绍", "https://capainchina.squarespace.com/advanced"]]}, "tc-3": {"id": "tc-3", "cat": "团体实践", "name": "北师大｜樊富珉团体心理辅导连续培训", "org": "线下工作坊 + 课后实践", "status": "按期招生（往期 6 月预报名）", "entry": "往期学费 15800 元，在读学生 13800 元。", "adv": "结课须带领团体并提交报告（实践不少于 10–14 学时），适合在社区、妇联、学校落地团体。", "cases": "须自己组织团体实践", "links": [["往期招生简章", "https://psych.bnu.edu.cn/docs/2025-01/eb515caea4a24f1e908ba056c4f62e3f.pdf"]]}, "tc-4": {"id": "tc-4", "cat": "平台实习", "name": "高校心理中心｜兼职 / 实习咨询师", "org": "本校或本地高校", "status": "多在学期初招募", "entry": "心理学研究生；需面试，接受中心督导与伦理培训。", "adv": "来访稳定且多为大学生（进食问题高发年龄段），通常免费督导——性价比最高的个案来源之一。", "cases": "中心派案 ✓", "links": []}, "tc-5": {"id": "tc-5", "cat": "平台实习", "name": "德瑞姆｜预备咨询师平台", "org": "商业培训机构 · 上海等地", "status": "长期（2026-08 报道）", "entry": "通常需先参加其培训课程；岗前培训 + 阶段考核。", "adv": "依托公益热线接触真实来访，配免费团体督导，3 个月实习期；表现好可转入付费个案。", "cases": "平台派案 ✓", "links": [["报道（2026-08）", "https://www.163.com/dy/article/L3DC9TI705169PE8.html"]]}, "tc-6": {"id": "tc-6", "cat": "平台实习", "name": "红树林心理｜实习生招募", "org": "广州 · 线下", "status": "网申 2026-09-22 至 2026-11-22", "entry": "本科及以上，心理学相关专业优先；投递前问清实习内容是否包含接个案。", "adv": "机构规模较大，设儿童青少年板块，适合大湾区同学就近实践。", "cases": "需确认", "links": [["招聘信息", "https://campus.niuqizp.com/job-vUUNNntZz.html"]]}, "tc-7": {"id": "tc-7", "cat": "平台实习", "name": "简单心理 Uni｜课程 + 实习", "org": "线上", "status": "以官网当期政策为准", "entry": "往期政策：完成 Seed 等课程的学员可获得专属实习机会。", "adv": "课程、实习、督导、同伴一站式，线上形式不受城市限制。", "cases": "学员实习（需确认）", "links": [["简单心理官网", "https://www.jiandanxinli.com/"]]}, "tc-8": {"id": "tc-8", "cat": "平台实习", "name": "咨询师之家（壹心理）/ 壹点灵", "org": "线上平台", "status": "长期", "entry": "多以购买课程或入驻审核为前提。", "adv": "提供实操、实习与执业支持，有督导资源和平台曝光，适合积累早期个案。", "cases": "平台派案（需确认条件）", "links": [["咨询师之家 App", "https://apps.apple.com/cn/app/id1480837923"], ["壹点灵咨询师工作台 App", "https://apps.apple.com/cn/app/%E5%A3%B9%E7%82%B9%E7%81%B5-%E5%92%A8%E8%AF%A2%E5%B8%88%E5%B7%A5%E4%BD%9C%E5%8F%B0/id1138700433"]]}, "tc-9": {"id": "tc-9", "cat": "认证路径", "name": "中国心理学会｜心理咨询师水平评价（三级）", "org": "备案培训机构组织", "status": "每年两次考试", "entry": "三级要求完成 24 学时实习；在备案 / 认定的培训机构参训。", "adv": "培训机构须提供见习实习教学，正规认证与实习绑定，适合需要证书的同学。", "cases": "机构安排见习实习", "links": [["2026 报考攻略（报道）", "https://m.sohu.com/a/1028345613_122580294/"]]}};window.__VERIFIED__="2026-11-10";</script>
 <script>(function(){
